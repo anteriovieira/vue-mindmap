@@ -1,6 +1,6 @@
 {
   "name": "vue-mindmap",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue component for mindnode maps",
   "author": "Antério vieira <anteriovieira@gmail.com>",
   "main": "dist/vue-mindmap.common.js",
