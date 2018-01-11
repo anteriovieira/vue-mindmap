@@ -1,4 +1,4 @@
-import Mindmap from 'src/MindMap'
+import Mindmap from 'src/Mindmap'
 import { createVM } from '../helpers/utils'
 
 import map from '../helpers/map'
