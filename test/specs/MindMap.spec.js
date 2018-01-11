@@ -1,11 +1,11 @@
-import Hello from 'src/Hello.vue'
-import { createVM } from '../helpers/utils.js'
+import VueMindmap from 'src/MindMap'
+import { createVM } from '../helpers/utils'
 
-describe('Hello.vue', function () {
+describe('MindMap', function () {
   it('should render correct contents', function () {
     const vm = createVM(this, `
 <Hello></Hello>
-`, { components: { Hello }})
+`, { components: { VueMindmap }})
     vm.$el.querySelector('.hello h1').textContent.should.eql('Hello World!')
   })
 })
