@@ -16,10 +16,10 @@ const bindData = (root, data, tag) => (
 /**
  * Bind connections to PATH tags on the given SVG
  */
-export const d3Connections = (svg, connections) => {
+export const d3Connections = (svg, connections) => (
   bindData(svg, connections, 'path')
    .attr('class', 'mindmap-connection')
-}
+)
 
 /* eslint-disable no-param-reassign */
 /**

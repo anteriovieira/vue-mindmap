@@ -38,7 +38,7 @@ module.exports = merge(base, {
   module: {
     rules: [
       {
-        test: /.scss$/,
+        test: /\.(scss|sass)$/,
         loader: vueLoaders.scss,
         include: [
           resolve(__dirname, '../node_modules/@material'),

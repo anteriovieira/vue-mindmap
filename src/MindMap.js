@@ -19,7 +19,6 @@ import {
 import { getDimensions, getViewBox } from './utils/dimensions'
 import subnodesToHTML from './utils/subnodesToHTML'
 import nodeToHTML from './utils/nodeToHTML'
-import '../sass/mindmap.sass'
 
 export default {
   props: {
@@ -88,7 +87,7 @@ export default {
      * Render mind map unsing D3
      */
     renderMap () {
-      const svg = select(this.mountPoint)
+      const svg = select(this.$refs.mountPoint)
 
       // Clear the SVG in case there's stuff already there.
       svg.selectAll('*').remove()
@@ -120,7 +119,7 @@ export default {
 
       onTick(connections, nodes, subnodes)
 
-      svg.att('viewBox', getViewBox(nodes.data()))
+      svg.attr('viewBox', getViewBox(nodes.data()))
         .call(d3PanZoom(svg))
         .on('dbClick.zoom', null)
     }

@@ -1,9 +1,24 @@
-import VueMindmap from 'src/MindMap'
+import Mindmap from 'src/MindMap'
 import { createVM } from '../helpers/utils'
 
-describe('MindMap', function () {
-  it('should render correct contents', function () {
-    const vm = createVM(this, `<vue-mindmap />`, { components: { VueMindmap }})
-    vm.$el.querySelector('.hello h1').textContent.should.eql('Hello World!')
+import map from '../helpers/map'
+
+const newVM = (context) => createVM(
+  context,
+  `<mindmap :nodes="nodes" :connections="connections" />`,
+  { data: map, components: { Mindmap }}
+)
+
+describe('Mind Map', function () {
+  it('should exist svg', function () {
+    const vm = newVM(this)
+
+    vm.$el.querySelector('svg').should.exist
+  })
+
+  it('should exist by svg class', function () {
+    const vm = newVM(this)
+
+    vm.$el.querySelector('.mindmap-svg').should.exist
   })
 })

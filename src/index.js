@@ -1,4 +1,5 @@
 import MindMap from './MindMap.js'
+import '../sass/mindmap.sass'
 
 function plugin (Vue) {
   Vue.component('mind-map', MindMap)
