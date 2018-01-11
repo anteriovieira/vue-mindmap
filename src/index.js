@@ -1,8 +1,8 @@
-import MindMap from './MindMap.js'
+import Mindmap from './Mindmap.js'
 import '../sass/mindmap.sass'
 
-function plugin (Vue) {
-  Vue.component('mind-map', MindMap)
+function plugin (Vue, options = { tag: 'mindmap' }) {
+  Vue.component(options.tag, Mindmap)
 }
 
 // Install by default if using the script tag
@@ -14,6 +14,6 @@ export default plugin
 const version = '__VERSION__'
 // Export all components too
 export {
-  MindMap,
+  Mindmap,
   version
 }
