@@ -12,7 +12,7 @@ module.exports = merge(base, {
   module: {
     rules: [
       {
-        test: /.scss$/,
+        test: /\.(scss|sass)$/,
         use: vueLoaders.scss,
         include: [
           resolve(__dirname, '../node_modules/@material'),

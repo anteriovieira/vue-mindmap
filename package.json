@@ -125,11 +125,10 @@
     "url": "https://github.com/anteriovieira/vue-mindmap/issues"
   },
   "homepage": "https://github.com/anteriovieira/vue-mindmap#readme",
-  "license": {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/mit-license.php"
-  },
+  "license": "MIT",
   "dependencies": {
     "d3": "^4.12.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
   }
 }

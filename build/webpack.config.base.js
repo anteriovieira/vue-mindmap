@@ -37,6 +37,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(sass|scss)$/,
+        use: vueLoaders.scss
+      },
+      {
         test: /.jsx?$/,
         use: 'babel-loader',
         include: [
