@@ -4,7 +4,7 @@
 
 > VueMindmap is a vue component for mindnode maps inspered by [react-mindmap](https://github.com/learn-anything/react-mindmap).
 
-[Live demo](https://codesandbox.io/s/r5j46qw3xn) built on top of the awesome [codesandbox](https://codesandbox.io).
+[Live demo](https://codesandbox.io/s/jv7pl7wn15) built on top of the awesome [codesandbox](https://codesandbox.io).
 
 <p align="center">
   <img alt="vue-mindmap" src="https://raw.githubusercontent.com/anteriovieira/vue-mindmap/master/media/mindmap.png" />
